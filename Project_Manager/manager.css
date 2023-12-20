@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #2B3832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.back-link {
+    color: #3498db;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    margin: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.add-group {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 30px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.add-group:hover {
+    background-color: #45a049;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.group-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-card, .delete-card, .completed-card, .remove-group {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-card:hover, .delete-card:hover, .completed-card:hover, .remove-group:hover {
+    background-color: #2980b9;
+}
+
+.completed-card {
+    background-color: #4CAF50;
+}
+
+.completed {
+    background-color: #f1f1f1;
+}
+
+.completed .card-title {
+    text-decoration: line-through;
+}
+
+.card-title, .group-title {
+    cursor: pointer;
+}
+
+.edit-mode {
+    border: 2px solid #3498db;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card, .group-title {
+    border-radius: 5px;
+}
+
+a {
+    color: #3498db;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #3498db;
+    margin: 40px 0px 20px 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.delete-card:hover{
+    background-color: #3498db;
+}
+
+.delete-card{
+    background-color: red;
+}
+
+.list.drag-over {
+    border: 2px dashed #3498db;
+}
+
+.list.drag-over .group-title {
+    background-color: #3498db;
+    color: #fff;
+}
